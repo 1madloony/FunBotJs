@@ -55,7 +55,7 @@ function alertActivated(guild) // Play sound on alert activated
       adapterCreator: guild.voiceAdapterCreator
   });
 
-  let resource = createAudioResource("C:\\Users\\1madloony\\Downloads\\alert_active.mp3");
+  let resource = createAudioResource(".\\alert_active.mp3");
   const player = createAudioPlayer();
   
   player.on('error', error => {
@@ -100,7 +100,7 @@ function alertDeactivated(guild) // Play sound on alert deactivated
       adapterCreator: guild.voiceAdapterCreator
   });
 
-  let resource = createAudioResource("C:\\Users\\1madloony\\Downloads\\alert_deactive.mp3");
+  let resource = createAudioResource(".\\alert_deactive.mp3");
   const player = createAudioPlayer();
   
   player.on('error', error => {
