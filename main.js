@@ -19,7 +19,7 @@ const permanentNickname = ". ZV";
 const usersRetries = new Map();
 const retriesCount = 3;
 
-const alertRegions = [31, 14, 29];
+const alertRegions = [31, 14];
 let alertInterval;
 let alertActive = false;
 let guild_safe;
