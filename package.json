@@ -1,0 +1,31 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "Personal usage discord bot",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1madloony/DiscordBot.git"
+  },
+  "keywords": [
+    "DiscordBot"
+  ],
+  "author": "1madloony",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1madloony/DiscordBot/issues"
+  },
+  "homepage": "https://github.com/1madloony/DiscordBot#readme",
+  "dependencies": {
+    "@discordjs/collection": "^2.0.0",
+    "@discordjs/voice": "^0.15.0",
+    "discord.js": "^14.12.1",
+    "dotenv": "^16.4.5",
+    "ffmpeg": "^0.0.4",
+    "libsodium-wrappers": "^0.7.13",
+    "request": "^2.88.2"
+  }
+}
