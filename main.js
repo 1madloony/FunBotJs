@@ -3,6 +3,7 @@
 const { joinVoiceChannel, createAudioResource, createAudioPlayer } = require('@discordjs/voice');
 const Discord = require('discord.js');
 const keep_alive = require('./keep_alive.js')
+const { join } = require('node:path');
 const request = require('request');
 require('dotenv').config();
 
@@ -55,7 +56,7 @@ function alertActivated(guild) // Play sound on alert activated
       adapterCreator: guild.voiceAdapterCreator
   });
 
-  let resource = createAudioResource(".\\alert_active.mp3");
+  let resource = createAudioResource(join(__dirname, 'alert_active.mp3'));
   const player = createAudioPlayer();
   
   player.on('error', error => {
@@ -100,7 +101,7 @@ function alertDeactivated(guild) // Play sound on alert deactivated
       adapterCreator: guild.voiceAdapterCreator
   });
 
-  let resource = createAudioResource(".\\alert_deactive.mp3");
+  let resource = createAudioResource(join(__dirname, 'alert_deactive.mp3'));
   const player = createAudioPlayer();
   
   player.on('error', error => {
