@@ -2,6 +2,7 @@
 
 const { joinVoiceChannel, createAudioResource, createAudioPlayer } = require('@discordjs/voice');
 const Discord = require('discord.js');
+const keep_alive = require('./keep_alive.js')
 const request = require('request');
 require('dotenv').config();
 
