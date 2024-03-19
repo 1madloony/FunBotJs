@@ -185,7 +185,7 @@ const client = new Discord.Client({
             alertDeactivated(guild);
           }
       });
-      }, 60000);
+      }, 45000);
   });
 
 client.on('guildMemberUpdate', (oldMember, newMember) => {
